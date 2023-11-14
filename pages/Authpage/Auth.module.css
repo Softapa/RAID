@@ -1,0 +1,96 @@
+.container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 50vw;
+}
+.rightColomn {
+  flex: 1;
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+}
+.sidebar {
+  flex: 0.2;
+  /* background-color: red; */
+  overflow: hidden;
+}
+.logo {
+  height: 6vh;
+  width: 6vh;
+  /* background-color: black; */
+}
+.siginbanner {
+  /* display: flex; */
+  /* height: 50px; */
+  width: 50px;
+}
+.maincontainer {
+  flex: 0.8;
+  display: flex;
+}
+.maincontent {
+  height: 60vh;
+  /* background-color: blue; */
+  display: flex;
+  width: 70vh;
+}
+.titlediscription {
+  /* font-size: s; */
+}
+.label {
+  font-size: 0.8vw;
+}
+.emailinput {
+  width: 30vw;
+  height: 5vh;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  /* border: 0.1vw solid gray; */
+}
+.emailinput:focus {
+  outline: none;
+}
+.forgetcontain {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  padding: 1vw;
+}
+.forgetheading {
+  font-size: 0.8vw;
+  color: #344054;
+}
+.forgetpassword {
+  font-size: 0.8vw;
+  color: #788b6c;
+}
+.Signinbtn {
+  height: 6vh;
+  width: 60vh;
+  background-color: #788b6c;
+  border-radius: 1vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Signinbtn:focus {
+  background-color: #788b6c;
+  opacity: 0.5px;
+}
+.Signinbtn:hover {
+  background-color: #515d4a;
+  opacity: 0.1px;
+}
+.Signinbtntxt{
+  color: azure;
+}

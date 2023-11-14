@@ -1,0 +1,11 @@
+{
+  "page.signin.head.title": "Bienvenue",
+  "page.signin.head.discription": "Content de te revoir! Veuillez entrer vos coordonnées.",
+  "page.signin.email.heading": "Addresse Email",
+  "page.signin.email.input": "Ajouter votre nom",
+  "page.signin.password.heading": "Mot de passe",
+  "page.signin.password.input": "Ajouter votre mot de passe",
+  "page.signin.forgetheading.password": "Rappelez-vous pendant 30 jours",
+  "page.signin.forget.password": "Forgot password",
+  "page.signin.button": "Connecter"
+}
