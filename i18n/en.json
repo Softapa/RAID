@@ -7,5 +7,21 @@
   "page.signin.password.input": "Add your password",
   "page.signin.forgetheading.password": "Remember for 30 days",
   "page.signin.forget.password": "Forgot password",
-  "page.signin.button": "Connect"
+  "page.signin.button": "Connect",
+  "page.signin.others.options": "Or log in with:",
+  "page.signin.signUp.quate": "Don't have an account ? ",
+  "page.signin.signUp": "Register now",
+
+  "page.signup.head.title": "Create an account",
+  "page.signup.head.discription": "Create your account and diversify your portfolio with riad invest.",
+  "page.signup.email.heading": "Email",
+  "page.signup.email.input": "Email",
+  "page.signup.password.heading": "Password",
+  "page.signup.password.input": "Password",
+  "page.signup.terms": "I have read and accept the T&Cs and the policy. confidentiality",
+  "page.signup.condition": "I am aware that investing involves risks",
+  "page.signup.button": "Register",
+  "page.signup.others.options": "Registration on the platform via:",
+  "page.signup.signin.quate": "Already have an account  ? ",
+  "page.signup.signin": "Log in"
 }

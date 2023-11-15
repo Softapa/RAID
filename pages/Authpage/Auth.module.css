@@ -1,5 +1,5 @@
 .container {
-  flex: 1;
+  display: flex;
   overflow: hidden;
 }
 
@@ -18,14 +18,22 @@
   display: flex;
 }
 .sidebar {
-  flex: 0.2;
+  flex: 0.1;
   /* background-color: red; */
   overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
 }
 .logo {
-  height: 6vh;
-  width: 6vh;
+  height: 2.5vw;
+  width: 2.5vw;
   /* background-color: black; */
+}
+.languagelogo {
+  height: 2vw;
+  width: 2vw;
 }
 .siginbanner {
   /* display: flex; */
@@ -35,18 +43,36 @@
 .maincontainer {
   flex: 0.8;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .maincontent {
   height: 60vh;
   /* background-color: blue; */
   display: flex;
-  width: 70vh;
+  width: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 2.3vw;
+  color: black;
+  font-weight: bolder;
 }
 .titlediscription {
   /* font-size: s; */
+  color: #667085;
+  margin-top: 0.5vw;
+  font-size: 0.9vw;
+  font-weight: 500;
 }
 .label {
-  font-size: 0.8vw;
+  font-size: 1vw;
+  color: black;
+  font-weight: bolder;
+}
+.inputcontain {
+  margin-top: 1.5vw;
 }
 .emailinput {
   width: 30vw;
@@ -54,8 +80,17 @@
   background-color: aliceblue;
   border: none;
   border-radius: 0.5vw;
-  font-size: 1vw;
+  font-size: 1.1vw;
+  padding-left: 0.5vw;
+  margin-top: 1.2vh;
+  align-self: center;
+
   /* border: 0.1vw solid gray; */
+}
+.emailinput::-webkit-input-placeholder {
+  color: #afafaf;
+  font-size: 1vw;
+  padding-left: 0.8vw;
 }
 .emailinput:focus {
   outline: none;
@@ -67,16 +102,18 @@
   padding: 1vw;
 }
 .forgetheading {
-  font-size: 0.8vw;
+  font-size: 1vw;
   color: #344054;
+  font-weight: 500;
 }
 .forgetpassword {
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   color: #788b6c;
+  font-weight: 500;
 }
 .Signinbtn {
-  height: 6vh;
-  width: 60vh;
+  height: 3vw;
+  width: 33vw;
   background-color: #788b6c;
   border-radius: 1vh;
   align-items: center;
@@ -91,6 +128,78 @@
   background-color: #515d4a;
   opacity: 0.1px;
 }
-.Signinbtntxt{
+.Signinbtntxt {
   color: azure;
+  font-size: 1vw;
+}
+.loginwith {
+  font-size: 1vw;
+  color: #788b6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5vw;
+}
+.othersbtnContain {
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+.btnothers {
+  height: 2.5vw;
+  width: 14vw;
+  background-color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
+  border: 0.01px solid transparent;
+  transition: border-color 0.3s ease;
+  margin-top: 1vw;
+}
+
+.btnothers:hover {
+  border-color: #788b6c;
+}
+.logotxt {
+  color: #000;
+  font-size: 1vw;
+  display: flex;
+  font-weight: 500;
+}
+.otherslogo {
+  height: 2vh;
+  width: 2vh;
+}
+.signUpquate {
+  font-size: 0.9vw;
+  font-weight: 400;
+  color: #000;
+}
+.signin_signUp {
+  color: #515d4a;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+.signupcontainer {
+  margin-top: 1vw;
+  text-align: center;
+}
+.fotter {
+  position: absolute;
+  bottom: 2vw;
+  align-self: center;
+  flex-direction: row;
+
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+}
+.copyright {
+  font-size: 0.9vw;
+  color: #000;
+  font-weight: 500;
+}
+.fonts {
+  padding-left: 1.1vw;
 }

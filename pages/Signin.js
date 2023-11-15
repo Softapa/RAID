@@ -6,7 +6,22 @@ import styles from "./Authpage/Auth.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import { Images } from "../public/constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
+const socialIcons = [
+  { icon: faFacebook, link: "https://facebook.com" },
+  { icon: faTwitter, link: "https://twitter.com" },
+  { icon: faInstagram, link: "https://instagram.com" },
+  { icon: faLinkedin, link: "https://linkedin.com" },
+  { icon: faYoutube, link: "https://youtube.com" },
+];
 const Signin = ({ dir, toggleLanguage, selectedLocale }) => {
   // const { locales } = useRouter();
   const intl = useIntl();
@@ -27,6 +42,15 @@ const Signin = ({ dir, toggleLanguage, selectedLocale }) => {
   });
   const forgetpassword = intl.formatMessage({
     id: "page.signin.forget.password",
+  });
+  const othersoptions = intl.formatMessage({
+    id: "page.signin.others.options",
+  });
+  const signUpquate = intl.formatMessage({
+    id: "page.signin.signUp.quate",
+  });
+  const signin_signUp = intl.formatMessage({
+    id: "page.signin.signUp",
   });
 
   // const titlediscription = intl.formatMessage({
@@ -49,23 +73,38 @@ const Signin = ({ dir, toggleLanguage, selectedLocale }) => {
         <div className={styles.leftColumn}>
           <div className={styles.sidebar}>
             <div className={styles.logo}>
-              <Image
-                className={styles.logo}
-                height={6}
-                width={6}
-                layout="responsive"
-                src={Images.Logo}
-              />
+              <Image className={styles.logo} fill src={Images.Logo} />
             </div>
+
             <select
               id="dropdown"
               onChange={handleChange}
-              style={{ height: "2vw", width: "10vw", border: "none" }}
+              style={{
+                height: "2vw",
+                width: "10vw",
+                border: "none",
+                outline: "none",
+                borderBlockColor: "#fff",
+              }}
             >
-              <option value="English" style={{ border: "none" }}>
+              <option
+                value="English"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  borderBlockColor: "#fff",
+                }}
+              >
                 English
               </option>
-              <option value="Français" style={{ border: "none" }}>
+              <option
+                value="Français"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  borderBlockColor: "#fff",
+                }}
+              >
                 Français
               </option>
             </select>
@@ -73,29 +112,31 @@ const Signin = ({ dir, toggleLanguage, selectedLocale }) => {
           <div className={styles.maincontainer}>
             <div className={styles.maincontent}>
               <div>
-                <div>{title}</div>
+                <div className={styles.title}>{title}</div>
                 <div className={styles.titlediscription}>
                   {titlediscription}
                 </div>
-                <label className={styles.label}>{emailheading}</label>
-                <div>
-                  <input
-                    name="email"
-                    placeholder={emailinput}
-                    type="email"
-                    className={styles.emailinput}
-                  />
+                <div className={styles.inputcontain}>
+                  <label className={styles.label}>{emailheading}</label>
+                  <div>
+                    <input
+                      name="email"
+                      placeholder={emailinput}
+                      type="email"
+                      className={styles.emailinput}
+                    />
+                  </div>
                 </div>
-                <label className={styles.forgetheading}>
-                  {passwordheading}
-                </label>
-                <div>
-                  <input
-                    name="email"
-                    placeholder={passwordinput}
-                    type="email"
-                    className={styles.emailinput}
-                  />
+                <div className={styles.inputcontain}>
+                  <label className={styles.label}>{passwordheading}</label>
+                  <div>
+                    <input
+                      name="email"
+                      placeholder={passwordinput}
+                      type="email"
+                      className={styles.emailinput}
+                    />
+                  </div>
                 </div>
                 <div className={styles.forgetcontain}>
                   <text className={styles.forgetheading}>{forgetheading}</text>
@@ -106,7 +147,47 @@ const Signin = ({ dir, toggleLanguage, selectedLocale }) => {
                 <div className={styles.Signinbtn}>
                   <p className={styles.Signinbtntxt}>{signinbutton}</p>
                 </div>
+                <div className={styles.loginwith}>{othersoptions}</div>
+                <div className={styles.othersbtnContain}>
+                  <div className={styles.btnothers}>
+                    <div className={styles.otherslogo}>
+                      <Image fill src={Images.googlelogo} />
+                    </div>
+                    <text className={styles.logotxt}>Google</text>
+                  </div>
+                  <div className={styles.btnothers}>
+                    <div className={styles.otherslogo}>
+                      <Image fill src={Images.fblogo} />
+                    </div>
+                    <text className={styles.logotxt}>Facebook</text>
+                  </div>
+                </div>
+                <div className={styles.signupcontainer}>
+                  <text className={styles.signUpquate}>{signUpquate}</text>
+
+                  <text className={styles.signin_signUp}>{signin_signUp}</text>
+                </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.fotter}>
+            <div className={styles.copyright}>Copyright 2023 RIAID INVSET</div>
+            <div>
+              {socialIcons.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={social.icon}
+                    size="xl"
+                    className={styles.fonts}
+                    color="#788B6C"
+                  />
+                </a>
+              ))}
             </div>
           </div>
         </div>
