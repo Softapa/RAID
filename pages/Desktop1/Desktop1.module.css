@@ -1,0 +1,174 @@
+.paymentflowcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remainingfunds {
+  height: 9vw;
+  width: 23vw;
+  border: 0.1px groove;
+  border-radius: 1vw;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 1vh; */
+}
+.Disponibles {
+  font-size: larger;
+  color: #788b6c;
+}
+.depositfunds {
+  background-color: #788b6c;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  width: 10vw;
+  height: 2.5vw;
+  gap: 0.5vw;
+  border-radius: 0.5vw;
+}
+.import {
+  height: 1vw;
+  width: 1vw;
+}
+.Déposer {
+  color: white;
+  font-size: small;
+}
+.depositfundsexport {
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  width: 10vw;
+  height: 2.5vw;
+  gap: 0.5vw;
+  border-radius: 0.5vw;
+  border: 0.1px groove;
+}
+.Retirer {
+  color: #000;
+  font-size: small;
+}
+.Disponiblesbtncontain {
+  flex-direction: row;
+  gap: 0.5vw;
+  display: flex;
+  align-self: center;
+  margin-top: 1vw;
+}
+.Disponiblescontain {
+  margin-left: 1vw;
+  display: flex;
+
+  flex-direction: column;
+}
+.amount {
+  font-size: xx-large;
+  font-weight: 700;
+}
+.totalinvestmentcontain {
+  height: 8vw;
+  width: 11.5vw;
+  display: flex;
+  background-color: #f2f7f7;
+  border-radius: 0.5vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Investissement {
+  color: rgba(0, 0, 0, 0.44);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.198px;
+}
+.Tinvestbtn {
+  display: flex;
+  height: 2vw;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 11px;
+  background: #fff;
+  align-self: center;
+}
+.tableheading {
+  font-size: 1.6vw;
+  color: #45503e;
+  font-weight: 500;
+  margin-top: 1vw;
+  padding-left: 1vw;
+}
+.tablecontain {
+  width: 50vw;
+  height: 30vw;
+  border: 0.5px groove;
+  margin-top: 1vw;
+}
+.Filtre {
+  font-size: large;
+  color: #000;
+}
+.FiltreContent {
+  display: flex;
+  width: 5vw;
+  height: 2vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px groove #ebebeb;
+  /* margin-top: 3vw; */
+}
+.FiltreContain {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #000; */
+  gap: 0.5vw;
+  /* padding: 0px 30px; */
+  align-items: center;
+  margin-top: 1vw;
+  padding-left: 1vw;
+}
+.receipt {
+  height: 1.5vw;
+  width: 1.5vw;
+}
+.operationheading {
+  flex-direction: row;
+  width: 30vw;
+  /* background-color: #000; */
+  height: 2vw;
+  /* border: 1px groove #ebebeb; */
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.operationdate {
+  flex-direction: row;
+  width: 10vw;
+  /* background-color: #000; */
+  height: 2vw;
+  /* border: 1px groove #ebebeb; */
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.table {
+  background-color: #000;
+  display: flex;
+  height:;
+}

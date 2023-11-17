@@ -6,4 +6,10 @@ export const Images = {
   googlelogo: require("./images/google.png"),
   frlogo: require("./images/france.png"),
   enlogo: require("./images/usa.png"),
+  receipt: require("./images/receipt.png"),
+  calendar: require("./images/calendar.png"),
+  coin: require("./images/coin.png"),
+  wallet: require("./images/wallet.png"),
+  import: require("./images/import.png"),
+  export: require("./images/export.png"),
 };

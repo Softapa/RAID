@@ -22,25 +22,14 @@ export default function Home() {
       {/* <Script src='/sc.js' strategy="lazyOnload"></Script> */}
       <nav className={styles.mainnav}>
         <ul>
-          <Link href="/">
-            <a>
-              <li>Home</li>
-            </a>
-          </Link>
           <Link href="/about">
-            <a>
-              <li>About</li>
-            </a>
+            <li>About</li>
           </Link>
           <Link href="/Signin">
-            <a>
-              <li>Blog</li>
-            </a>
+            <li>Blog</li>
           </Link>
           <Link href="/contact">
-            <a>
-              <li>Contact</li>
-            </a>
+            <li>Contact</li>
           </Link>
         </ul>
       </nav>
